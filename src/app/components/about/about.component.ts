@@ -54,7 +54,7 @@ import { CardModule } from 'primeng/card';
 
             <!-- Botón descargar CV -->
             <div class="mt-6">
-              <a href="assets/CV-VladimirMiranda.pdf" target="_blank"
+              <a href="assets/CV_VladimirMiranda_24.pdf" target="_blank"
                  class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
                 <i class="pi pi-download mr-2"></i> 
                 <span>Descargar CV</span>

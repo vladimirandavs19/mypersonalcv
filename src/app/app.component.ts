@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HeaderComponent } from "./components/header/header.component";
 import { AboutComponent } from "./components/about/about.component";
+import { GithubComponent } from "./components/github/github.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
 import { EducationComponent } from "./components/education/education.component";
 import { SkillsComponent } from "./components/skills/skills.component";
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, AboutComponent, ExperienceComponent, EducationComponent, SkillsComponent, ContactComponent, CertificationComponent, ButtonModule, CommonModule],
+  imports: [HeaderComponent, AboutComponent, GithubComponent, ExperienceComponent, EducationComponent, SkillsComponent, ContactComponent, CertificationComponent, ButtonModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -31,6 +31,11 @@ import { Menu } from 'primeng/menu';
             </button>
             <button 
               class="nav-button px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-md transition-all duration-200"
+              (click)="scrollToSection('github')">
+              Proyectos
+            </button>
+            <button 
+              class="nav-button px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-md transition-all duration-200"
               (click)="scrollToSection('experience')">
               Experiencia
             </button>
@@ -55,7 +60,7 @@ import { Menu } from 'primeng/menu';
               Contacto
             </button>
             <a 
-              href="assets/CV-VladimirMiranda.pdf" 
+              href="assets/CV_VladimirMiranda_24.pdf" 
               target="_blank"
               class="ml-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
               <i class="pi pi-download mr-1"></i> CV
@@ -128,6 +133,13 @@ export class HeaderComponent implements OnInit {
         }
       },
       {
+        label: 'Proyectos',
+        icon: 'pi pi-github',
+        command: () => {
+          this.scrollToSection('github');
+        }
+      },
+      {
         label: 'Experiencia',
         icon: 'pi pi-briefcase',
         command: () => {
@@ -169,7 +181,7 @@ export class HeaderComponent implements OnInit {
         label: 'Descargar CV',
         icon: 'pi pi-download',
         command: () => {
-          window.open('assets/CV-VladimirMiranda.pdf', '_blank');
+          window.open('assets/CV_VladimirMiranda_24.pdf', '_blank');
         }
       }
     ];
